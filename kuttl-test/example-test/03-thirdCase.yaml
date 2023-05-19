@@ -1,6 +1,6 @@
 apiVersion: kuttl.dev/v1beta1
 kind: TestStep
 apply:
-  - configmap2.yaml
+  - configmap3.yaml
 assert:
-  - configmap1-assert.yaml
+  - configmap3-assert.yaml
