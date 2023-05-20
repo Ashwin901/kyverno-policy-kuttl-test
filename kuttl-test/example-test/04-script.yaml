@@ -1,0 +1,12 @@
+apiVersion: kuttl.dev/v1beta1
+kind: TestStep
+commands:
+  - script: |
+      if kubectl get configmap cm-3 -n prod -o jsonpath='{.metadata.labels.lfx-mentorship}' | grep -q "kyverno"
+      then 
+        echo "Test failed. Label 'lfx-mentorship: kyverno' is present."
+        exit 1 
+      else 
+        echo "Test succeeded. Label 'lfx-mentorship: kyverno' is not present."
+        exit 0
+      fi

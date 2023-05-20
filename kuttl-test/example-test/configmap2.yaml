@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: cm-lfx
+  name: cm
   namespace: team-lfx
   labels:
     app: kyverno
