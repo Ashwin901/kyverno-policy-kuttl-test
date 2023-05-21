@@ -13,3 +13,11 @@ kubectl kuttl test ./tests/
 
 Should get the following output at the completion of the test case:
 ![image](https://github.com/Ashwin901/kyverno-policy-kuttl-test/assets/56069189/d023888d-4d88-4e82-9dc2-ebd127d22254)
+
+## Test Cases
+
+1. ConfigMap without the lfx-mentorship label in a matching namespace 
+2. ConfigMap with the lfx-mentorship label in a matching namespace
+3. ConfigMap without the lfx-mentorship label in a non-matching namespace
+4. Resource other than ConfigMap in a matching namespace
+5. Resource other than ConfigMap in a non-matching namespace
