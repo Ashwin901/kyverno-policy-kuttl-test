@@ -8,3 +8,8 @@ The test suite for this Kyverno policy validates the policy's functionality and 
 ```
 kubectl kuttl test ./tests/
 ```
+
+## Output
+
+Should get the following output at the completion of the test case:
+![image](https://github.com/Ashwin901/kyverno-policy-kuttl-test/assets/56069189/d023888d-4d88-4e82-9dc2-ebd127d22254)
